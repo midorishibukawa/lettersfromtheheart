@@ -1,14 +1,17 @@
+import React from 'react';
 import './App.css';
+import SignInForm from './components/SignInForm';
+import Header from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Letters from the heart</h1>
-      <input type="text_area"></input>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+      return (
+        <div className='App App-header'>
+          <Header/>
+          <SignInForm/>
+        </div>
+      )
+  }
 }
 
 export default App;
